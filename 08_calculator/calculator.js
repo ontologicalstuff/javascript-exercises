@@ -11,10 +11,10 @@ const sum = function(arr) {
 	let i = 0;
   let sum = 0;
   if (arr.length === i) { 
-    return sum
+    return sum;
   }
   while (i < arr.length) {
-    sum += arr[i]
+    sum += arr[i];
     i++;
   }
   return sum;
@@ -28,7 +28,7 @@ const multiply = function(arr) {
   } else {
       while (i < arr.length) {
         product *= arr[i];
-        i++
+        i++;
       }
       return product;
   }
