@@ -14,10 +14,6 @@ const findTheOldest = function(arr) {
 };
 
 
-
-
-
-
 /* First solution 
 const findTheOldest = function(arr) {
     let objToArr = [];
