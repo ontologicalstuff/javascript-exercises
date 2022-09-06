@@ -1,14 +1,13 @@
 const palindromes = function (words) {
-    words = words.toLowerCase();
-    words = words.match(/[a-z]/g);
-    let backwards = Array.from(words);
-    backwards = backwards.reverse();
-    if (words.toString() === backwards.toString()) {
-    		return true
-    } else {
-    		return false
-    }
- };
+    words = Array.from(words.toLowerCase()).filter(word => word.match(/[a-z]/g));
+    let backwards = words.join('');
+    backwards = Array.from(backwards)
+    backwards = backwards.reverse().join('');
+    if (words.join('') === backwards) {
+        return true
+    } 
+        return false
+   };
 
 // Do not edit below this line
 module.exports = palindromes;
